@@ -1,0 +1,28 @@
+﻿<Window x:Class="RCZweipolGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RCZweipolGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="400">
+    <Grid x:Name="Main_Grid" Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
+        <StackPanel/>
+        <Grid HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top">
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="182" VerticalAlignment="Top" Width="380">
+                <Border HorizontalAlignment="Left" Height="197" VerticalAlignment="Top" Width="380">
+                    <StackPanel Margin="10,0,10,25">
+                        <StackPanel Orientation="Vertical" Width="116" HorizontalAlignment="Left" VerticalAlignment="Top">
+                            <TextBox TextWrapping="Wrap" Text="TextBox" TextChanged="TextBox_TextChanged_1">
+                                <AutomationProperties.LabeledBy>
+                                    <UIElement/>
+                                </AutomationProperties.LabeledBy>
+                            </TextBox>
+                            <Label Content="Label"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
