@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
+using System.Windows.Resources;
 using System.Windows.Shapes;
 
 namespace RCZweipolGUI
@@ -18,6 +20,7 @@ namespace RCZweipolGUI
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -25,14 +28,21 @@ namespace RCZweipolGUI
             InitializeComponent();
         }
 
+
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
-        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        private void Examples_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+         
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
     }
 }
